@@ -1,0 +1,1 @@
+# A Python 3 library for programmatically generating SVG images in 3D (projected to 2D) drawing it with [drawsvg](https://github.com/cduck/drawsvg)
