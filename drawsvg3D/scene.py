@@ -1,5 +1,5 @@
 import drawsvg as dw 
-from shapes.shapes import *
+#from shapes.shape import *
 
 
 class Scene():
@@ -11,7 +11,8 @@ class Scene():
         self.name = "example"
         self.camera = camera 
 
-        self.objects: list[Shape] = []
+        #self.objects: list[Shape] = []
+        self.objects = []
 
         self.canvas = dw.Drawing(width, height, origin=(0, 0), id_prefix= self.id)
 

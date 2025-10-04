@@ -1,8 +1,10 @@
-from source.scene import *
+from drawsvg3D import scene,sphere
 
-scene = Scene()
 
-scene.objects.append(Sphere())
+
+scene = scene.Scene()
+
+scene.objects.append(sphere.Sphere())
 
 scene.draw()
 

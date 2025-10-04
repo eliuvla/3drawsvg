@@ -1,5 +1,5 @@
-from shape import *
-from scene import *
+from .shape import *
+#from scene import *
 
 import drawsvg as dw 
 
@@ -10,5 +10,5 @@ class Sphere(Shape):
         self.color_fill = (255,255,255)
         self.radius = 10
 
-    def draw(self, scene = Scene()):
+    def draw(self, scene ):
         scene.canvas.append(dw.Circle(self.center[0], self.center[1], self.radius))

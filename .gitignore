@@ -3,3 +3,4 @@
 *.xlsx
 *.spec
 *.svg
+__pycache__
