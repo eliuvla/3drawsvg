@@ -3,7 +3,7 @@ import drawsvg as dw
 
 
 class Scene():
-    def __init__(self, width = 100, height = 100 , id_prefix = 'unique_name', camera = None):
+    def __init__(self, width = 256, height = 256 , id_prefix = 'unique_name', camera = None):
 
         self.width = width
         self.height = height
@@ -14,7 +14,9 @@ class Scene():
         #self.objects: list[Shape] = []
         self.objects = []
 
-        self.canvas = dw.Drawing(width, height, origin=(0, 0), id_prefix= self.id)
+        self.origin = (-self.width/2, -self.height/2)
+
+        self.canvas = dw.Drawing(width, height, origin= self.origin, id_prefix= self.id)
 
     def draw(self):
         for object in self.objects:
